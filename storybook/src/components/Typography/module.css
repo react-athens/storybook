@@ -1,0 +1,41 @@
+:local(.typography) {
+  font-family: 'Lato', sans-serif;
+}
+
+:local(.h1) {
+  composes: typography;
+  font-size: 36px;
+}
+:local(.h2) {
+  composes: typography;
+  font-size: 32px;
+}
+:local(.h3) {
+  composes: typography;
+  font-size: 28px;
+}
+:local(.h4) {
+  composes: typography;
+  font-size: 24px;
+}
+:local(.h5) {
+  composes: typography;
+  font-size: 20px;
+}
+:local(.h6) {
+  composes: typography;
+  font-size: 16px;
+}
+
+:local(.label) {
+  composes: typography;
+  font-size: 14px;
+  color: #9497A7;
+  text-transform: uppercase;
+}
+
+:local(.text) {
+  composes: typography;
+  font-size: 14px;
+  color: #222435;
+}
