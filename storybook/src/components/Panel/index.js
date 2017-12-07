@@ -7,10 +7,12 @@ import Typography from '../Typography'
 export default ContentBox
 
 export const PanelHeader = ({ title, children }) => (
-  <ContentBox>
-    <Typography.Header3>
-      {title}
-    </Typography.Header3>
-    {children}
-  </ContentBox>
+  <div style={{ borderBottom: `1px solid ${Colors.shade4}` }}>
+    <ContentBox hasShadow hasPadding >
+      <Typography.Header5>
+        {title}
+      </Typography.Header5>
+      {children}
+    </ContentBox>
+  </div>
 )

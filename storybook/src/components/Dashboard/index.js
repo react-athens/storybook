@@ -16,7 +16,9 @@ const SideBar = ({ children }) => (
 
 const Content = ({ header, children }) => (
   <div style={{ flex: '1 0 auto', display: 'flex', flexDirection: 'column', alignItems: 'stretch' }}>
-    <div style={{ boxShadow: '4px 0 5px 0 rgba(51,51,51,0.2)', flex: '0 0 60px', marginBottom: 5 }}>{header}</div>
+    <div style={{ boxShadow: '4px 0 5px 0 rgba(51,51,51,0.2)', flex: '0 0 60px', marginBottom: 5, backgroundColor: Colors.white }}>
+      {header}
+    </div>
     <div style={{ flex: '1 0 auto', display: 'flex', alignItems: 'stretch' }}>
       {children}
     </div>
