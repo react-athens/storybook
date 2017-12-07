@@ -6,38 +6,38 @@ import { linkTo } from '@storybook/addon-links';
 
 import Colors from '../Color/colors.js'
 
-import Panel from './index';
+import ContentBox from './index';
 
-const stories = storiesOf('Panel', module)
+const stories = storiesOf('ContentBox', module)
 
 stories.add('Default', () => (
   <div style={{}}>
-    <Panel>
+    <ContentBox>
       <div> Content </div>
-    </Panel>
+    </ContentBox>
   </div>
 ))
 
 stories.add('With shadow', () => (
   <div style={{}}>
-    <Panel hasShadow={true}>
+    <ContentBox hasShadow={true}>
       <div> Content </div>
-    </Panel>
+    </ContentBox>
   </div>
 ))
 
 stories.add('With border top', () => (
   <div style={{}}>
-    <Panel borderTopColor={Colors.blue}>
+    <ContentBox borderTopColor={Colors.blue}>
       <div> Content </div>
-    </Panel>
+    </ContentBox>
   </div>
 ))
 
 stories.add('With border', () => (
   <div style={{}}>
-    <Panel borderColor={Colors.blue}>
+    <ContentBox borderColor={Colors.blue}>
       <div> Content </div>
-    </Panel>
+    </ContentBox>
   </div>
 ))

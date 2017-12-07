@@ -1,5 +1,6 @@
 :local(.typography) {
   font-family: 'Lato', sans-serif;
+  margin: 0;
 }
 
 :local(.h1) {
