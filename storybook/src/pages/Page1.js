@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import logo from '../logo.svg';
-import Dashboard from '../components/Dashboard'
 import Panel, { PanelHeader, PanelContent } from '../components/Panel'
-
-import Typography from '../components/Typography'
 import Colors from '../components/Color/colors'
-import Statistics from '../components/Statistics'
+import Statistics from '../components/StatisticsDemo'
 
 export default () => (
   <div style={{
