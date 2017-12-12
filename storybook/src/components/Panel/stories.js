@@ -6,9 +6,10 @@ import { linkTo } from '@storybook/addon-links';
 
 import Colors from '../Color/colors.js'
 
-import Panel from './index';
+import Panel, { PanelHeader, PanelContent } from './index';
 
 const stories = storiesOf('Panel', module)
+
 
 stories.add('Default', () => (
   <div style={{}}>
@@ -38,6 +39,24 @@ stories.add('With border', () => (
   <div style={{}}>
     <Panel borderColor={Colors.blue}>
       <div> Content </div>
+    </Panel>
+  </div>
+))
+
+stories.add('With header', () => (
+  <div style={{ height: 200}}>
+    <Panel hasShadow>
+      <PanelHeader title="My header" />
+      <PanelContent>
+        <div>Content</div>
+        <div>Content</div>
+        <div>Content</div>
+        <div>Content</div>
+        <div>Content</div>
+        <div>Content</div>
+        <div>Content</div>
+        <div>Content</div>
+      </PanelContent>
     </Panel>
   </div>
 ))
