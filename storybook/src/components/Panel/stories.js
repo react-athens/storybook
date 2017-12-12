@@ -13,7 +13,7 @@ const stories = storiesOf('Panel', module)
 
 stories.add('Default', () => (
   <div style={{}}>
-    <Panel>
+    <Panel hasPadding>
       <div> Content </div>
     </Panel>
   </div>
@@ -21,7 +21,7 @@ stories.add('Default', () => (
 
 stories.add('With shadow', () => (
   <div style={{}}>
-    <Panel hasShadow={true}>
+    <Panel hasPadding hasShadow={true}>
       <div> Content </div>
     </Panel>
   </div>
@@ -29,7 +29,7 @@ stories.add('With shadow', () => (
 
 stories.add('With border top', () => (
   <div style={{}}>
-    <Panel borderTopColor={Colors.blue}>
+    <Panel hasPadding borderTopColor={Colors.blue}>
       <div> Content </div>
     </Panel>
   </div>
@@ -37,14 +37,14 @@ stories.add('With border top', () => (
 
 stories.add('With border', () => (
   <div style={{}}>
-    <Panel borderColor={Colors.blue}>
+    <Panel hasPadding borderColor={Colors.blue}>
       <div> Content </div>
     </Panel>
   </div>
 ))
 
 stories.add('With header', () => (
-  <div style={{ height: 200}}>
+  <div style={{ height: 200 }}>
     <Panel hasShadow>
       <PanelHeader title="My header" />
       <PanelContent>
