@@ -13,7 +13,9 @@ class App extends Component {
       <div style={{ height: '100%', backgroundColor: Colors.shade5 }}>
         <Dashboard.Container>
           <Dashboard.SideBar>
-            Dashboard SideBar
+            <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
+              <div>Dashboard SideBar</div>
+            </div>
           </Dashboard.SideBar>
           <Dashboard.Content header='Dashboard Header'>
             <div style={{
@@ -32,7 +34,7 @@ class App extends Component {
                 <Panel hasShadow>
                   <PanelHeader title='Overview' />
                   <Panel hasPadding>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' , alignItems: 'flex-end' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
                       <Statistics label='Total' difference={200} total={8530.1} />
                       <Statistics label='Sales' total={8012.10} />
                       <Statistics label='Costs' difference={-87.02} total={1503.1} />

@@ -3,7 +3,7 @@ import React from "react"
 import Colors from '../Color/colors.js'
 
 const Container = ({ children }) => (
-  <div style={{ display: 'flex', flexDirection: 'row', height: '100%' }}>
+  <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'stretch', height: '100%' }}>
     {children}
   </div>
 )
