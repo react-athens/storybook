@@ -11,6 +11,6 @@ export default ({ label, difference, total }) => {
   return (
     <div>
       {label} {difference} {total}
-    </div >
+    </div>
   )
 }

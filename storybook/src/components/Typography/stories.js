@@ -9,7 +9,7 @@ import Typography from './index';
 const stories = storiesOf('Typography', module)
 
 stories.add('Default', () => (
-  <div style={{}}>
+  <div style={{ lineHeight: 2 }}>
     <div><Typography.Header1>Header 1</Typography.Header1></div>
     <div><Typography.Header2>Header 2</Typography.Header2></div>
     <div><Typography.Header3>Header 3</Typography.Header3></div>

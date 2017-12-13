@@ -25,7 +25,7 @@ class App extends Component {
               gridTemplateRows: '80px auto',
               gridGap: '15px 15px',
               margin: 15,
-              width: '100%'
+              width: '100%',
             }}>
               <div style={{ gridColumn: '2 / 3', gridRow: '1 / 3' }}>
                 <Panel hasShadow hasPadding> Right Side bar</Panel>
