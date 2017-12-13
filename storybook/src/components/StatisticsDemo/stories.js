@@ -3,7 +3,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import Colors from '../Color/colors.js'
 import Statistics from './index';
 
 const stories = storiesOf('Statistics Demo', module)
