@@ -2,15 +2,12 @@ import React, { Component } from 'react';
 
 import logo from './logo.svg';
 import Dashboard from './components/Dashboard'
-import Panel, { PanelHeader } from './components/Panel'
-import Typography from './components/Typography'
+import Panel from './components/Panel'
 import Colors from './components/Color/colors'
-import Statistics from './components/Statistics'
 import Page1 from './pages/Page1'
 
 class App extends Component {
   render() {
-
     return (
       <div style={{ height: '100%', backgroundColor: Colors.shade5 }}>
         <Dashboard.Container>
