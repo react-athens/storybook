@@ -10,7 +10,7 @@ export default ({ label, difference, total }) => {
   const icon = difference >= 0 ? <Icon.Up /> : <Icon.Down />
   return (
     <div>
-      <div style={{ display: 'flex', alignItems: 'center', height: 24, ...(difference ? { justifyContent: 'space-between' } : {}) }}>
+      <div style={{ display: 'flex', alignItems: 'center', ...(difference ? { justifyContent: 'space-between' } : {}) }}>
         <div style={{ marginRight: 10 }}>
           <Typography.Label>{label}</Typography.Label>
         </div>
