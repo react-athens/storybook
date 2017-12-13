@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import Dashboard from './components/Dashboard'
 import Panel from './components/Panel'
 import Colors from './components/Color/colors'
-import Page1 from './pages/Page1'
+import Overview from './dashboards/Overview'
 
 class App extends Component {
   render() {
@@ -31,7 +31,7 @@ class App extends Component {
                 <Panel hasShadow hasPadding> Right Side bar</Panel>
               </div>
               <div style={{ gridColumn: '1 / 2', gridRow: '1 / 3' }}>
-                <Page1 />
+                <Overview />
               </div>
             </div>
 
