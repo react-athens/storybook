@@ -6,7 +6,7 @@ import Panel, { PanelHeader, PanelContent } from '../components/Panel'
 
 import Typography from '../components/Typography'
 import Colors from '../components/Color/colors'
-import Statistics from '../components/Statistics'
+import Statistics from '../components/StatisticsDemo'
 
 export default () => (
   <div style={{
@@ -22,9 +22,9 @@ export default () => (
         <PanelHeader title='Overview' />
         <PanelContent>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
-            <Statistics label='Total' difference={200} total={8530.1} />
-            <Statistics label='Sales' total={8012.10} />
-            <Statistics label='Costs' difference={-87.02} total={1503.1} />
+          <Statistics label='Total' difference={200} total={8530.1} />
+          <Statistics label='Sales' total={8530.1} />
+          <Statistics label='Costs' difference={-200}  total={8530.1} />
           </div>
         </PanelContent>
       </Panel>
